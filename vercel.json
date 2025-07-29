@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "app/api/hello.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
