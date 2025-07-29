@@ -59,7 +59,7 @@ body {
 }
 
 .upload-area:hover {
-  border-color:  #fbf703;
+  border-color: #fbf703;
   background-color: #f8f9ff;
 }
 
@@ -106,7 +106,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px  #e1e900
+  box-shadow: 0 10px 20px rgba(225, 233, 0, 0.3);
 }
 
 .btn-secondary {
@@ -149,13 +149,13 @@ body {
 }
 
 .option-card:hover {
-  border-color:  #e1e900;
+  border-color: #e1e900;
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px #e1e900;
+  box-shadow: 0 10px 25px rgba(225, 233, 0, 0.2);
 }
 
 .option-card.selected {
-  border-color:  #e1e900;
+  border-color: #e1e900;
   background: #e1e900;
   color: white;
 }
@@ -234,7 +234,7 @@ body {
 
 .preview-arrow {
   font-size: 2rem;
-  color:  #e1e900;
+  color: #e1e900;
   font-weight: bold;
 }
 
@@ -255,7 +255,7 @@ body {
   width: 50px;
   height: 50px;
   border: 5px solid #f3f3f3;
-  border-top: 5px solid  #e1e900;
+  border-top: 5px solid #e1e900;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin: 0 auto 20px;
