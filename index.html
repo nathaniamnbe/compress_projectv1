@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Compressor - Kompres Foto Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📸 Photo Compressor</h1>
+            <p>Kompres foto Anda dengan mudah dan cepat</p>
+        </header>
+
+        <main class="main-content">
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-content">
+                        <div class="upload-icon">📁</div>
+                        <h3>Pilih atau Drop Foto Disini</h3>
+                        <p>Mendukung format JPG, PNG, WebP - Output: JPEG</p>
+                        <button class="btn-primary" onclick="document.getElementById('fileInput').click()">
+                            Pilih Foto
+                        </button>
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Compression Options -->
+            <div class="compression-section" id="compressionSection" style="display: none;">
+                <h3>Pilih Tingkat Kompresi</h3>
+                <div class="compression-options">
+                    <div class="option-card" data-size="200">
+                        <div class="option-icon">🔥</div>
+                        <h4>Ultra Compress</h4>
+                        <p>~200KB</p>
+                    </div>
+                    <div class="option-card" data-size="400">
+                        <div class="option-icon">⚡</div>
+                        <h4>High Compress</h4>
+                        <p>~400KB</p>
+                    </div>
+                    <div class="option-card" data-size="800">
+                        <div class="option-icon">✨</div>
+                        <h4>Medium Compress</h4>
+                        <p>~800KB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preview Section -->
+            <div class="preview-section" id="previewSection" style="display: none;">
+                <div class="preview-container">
+                    <div class="preview-item">
+                        <h4>Foto Asli</h4>
+                        <div class="image-container">
+                            <img id="originalImage" alt="Original">
+                            <div class="image-info">
+                                <span id="originalSize">-</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-arrow">→</div>
+                    <div class="preview-item">
+                        <h4>Foto Terkompresi</h4>
+                        <div class="image-container">
+                            <img id="compressedImage" alt="Compressed">
+                            <div class="image-info">
+                                <span id="compressedSize">-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button class="btn-secondary" onclick="resetCompressor()">Compress Lagi</button>
+                    <button class="btn-primary" id="downloadBtn">Download Foto</button>
+                </div>
+            </div>
+
+            <!-- Loading -->
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Sedang mengkompresi foto...</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Photo Compressor</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
